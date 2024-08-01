@@ -1,21 +1,31 @@
 <html>
-  <head>
-    <title>Projeto Calculadora</title>
-<p>Uma simples calculadora em javaScript com as funçãos básicas.</p>
-  </head>
-<body>
-  <div class='calculadora'>
-<div class='display'>
-  <input id='display'placeholder='0' disabled>
-  <h2 id='historico'></h2>
-</div>
-
+	<head>
+		<title>Projeto Final Calculadora</title>
+		<p>Uma simples calculadora em JavaScript com as funções básicas.</p>
+	</head>
+	<body>
+		<div class='calculadora'>
+			<div class='display'>
+				<input id='display' placeholder='0' disabled>
+			</div>
+			<div class='linha'>
+				<button class='ce' onclick='limpar()'>CE</button>
+				<button class='c' onclick='limpar()'>C</button>
+				<button class='perc' onclick='percentual()'>%</button>
+				<button class='divisao' onclick='add_operador("/")'>/</button>
+			</div>
     <div class='linha'>
-      <button class='ce'onclick='limpar()'>CE</button>
-       <button class='c'onclick='limpar()'>C</button>
-       <button class='percentl'onclick='percentual()'>%</button>
-        <button class='divisao'onclick='add_operador("/")'>/</button>
+      <button class='numero' onclick='add_numero(7)'>7</button>
+        <button class='numero' onclick='add_numero(8)'>9</button>
+        <button class='numero' onclick='add_numero(9)'>9</button>
+        <button class='multiplic' onclick='add_operador(*)'>*</button>
     </div>
-  </div>
-</body>
+         <div class='linha'>
+      <button class='numero' onclick='add_numero(4)'>4</button>
+        <button class='numero' onclick='add_numero(5)'>5</button>
+        <button class='numero' onclick='add_numero(6)'>6</button>
+        <button class='subitrair' onclick='add_operador(-)'>-</button>
+    </div>
+		</div>
+	</body>
 </html>
